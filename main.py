@@ -76,12 +76,17 @@ def create_birthday_post():
                 # 5. අලුත් නම ටයිප් කිරීම
                 text_to_add = f"{kid['name'].upper()}"
                 
-                # 5. අලුත් නම ටයිප් කිරීම
-                text_to_add = f"{kid['name'].upper()}"
-                
                 font = ImageFont.truetype("myfont.ttf", 180) 
 
+                # අකුරු වල පළල හොයාගෙන හරියටම මැදට සෙට් කිරීම
                 text_bbox = draw.textbbox((0, 0), text_to_add, font=font)
+                text_width = text_bbox[2] - text_bbox[0]
+                
+                x_position = (3375 - text_width) / 2
+                y_position = 2380 
+
+                # මේ පේළියෙන් තමයි ඇත්තටම ෆොටෝ එක උඩ අකුරු ලියන්නේ!
+                draw.text((x_position, y_position), text_to_add, fill="#2a2a2a", font=font)
 
                 # 6. අවසාන පෝස්ට් එක සේව් කරනවා
                 final_image = template.convert("RGB")
