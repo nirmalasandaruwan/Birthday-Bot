@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Kasun",
+    "birthday": "08-13",
+    "photo_name": "kasun.jpg"
+  },
+  {
+    "name": "Nimal",
+    "birthday": "08-14",
+    "photo_name": "nimal.jpg"
+  },
+  {
+    "name": "Pawani",
+    "birthday": "08-15",
+    "photo_name": "pawani.jpg"
+  },
+  {
+    "name": "Sithum",
+    "birthday": "08-16",
+    "photo_name": "sithum.jpg"
+  }
+]
